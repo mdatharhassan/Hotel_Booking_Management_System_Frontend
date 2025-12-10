@@ -10,6 +10,8 @@ export async function signup({ fullName, email, password }) {
 }
 
 export async function login({ email, password }) {
+  console.log(email);
+
   const response = await api.post("/auth/login", {
     email,
     password,
